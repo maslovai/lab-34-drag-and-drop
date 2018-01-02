@@ -10,7 +10,7 @@ class Droppable extends React.Component {
       let payload = e.dataTransfer.getData('text/json');
       let expense = JSON.parse(payload);
       console.log('in Drop::::::', expense);
-    //   this.props.handleDrop(expense);
+      this.props.handleDrop(expense);
   }
   handleDragOver(e){
     e.preventDefault();
