@@ -9,6 +9,11 @@ export default (state=emptyState, {type, payload}) => {
       let category = state[categoryID];
       let result = [...category, payload];
       return {...state, [categoryID]: result};
+    case 'EXPENSE_INSERT':
+      categoryID = payload.categoryID;
+      category = state[categoryID];
+      result = [...category, payload];
+      return {...state, [categoryID]: result};  
     case 'EXPENSE_UPDATE':
       return state;
     case 'EXPENSE_DESTROY':

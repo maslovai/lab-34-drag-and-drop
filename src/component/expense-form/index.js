@@ -18,6 +18,8 @@ class ExpenseForm extends React.Component{
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+
+    this.props.onComplete({name:'Groceries', cost: 50, categoryID: this.props.categoryID});
   }
 
   handleChange(e){
@@ -57,8 +59,8 @@ class ExpenseForm extends React.Component{
         <ExpenseItem 
           expenseDelete={this.props.expenseDelete}
           expenses={this.props.expenses} 
-          categoryID={this.state.categoryID}/> 
-
+          categoryID={this.state.categoryID}
+          expenseInsert={this.props.expenseInsert}/> 
       </div>
     )
   }

@@ -36,6 +36,7 @@ class Dashboard extends React.Component{
                 categoryID={category.id}
                 expenses={this.props.expenses}
                 expenseDelete={this.props.expenseDelete}
+                expenseInsert={this.props.expenseInsert}
               />
             </div>
           )}
@@ -59,6 +60,7 @@ let mapDispatchToProps = (dispatch) => {
     categoryRemove: (data) => dispatch(category.destroy(data)),
     expenseCreate: (data) => dispatch(expense.create(data)),
     expenseDelete: (data) => dispatch(expense.destroy(data)),
+    expenseInsert: (data) => dispatch(expense.insert(data))
   }
 }
 

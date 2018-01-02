@@ -19,6 +19,11 @@ export const update = (expense) => ({
 export const destroy = (expense) => ({
   type: 'EXPENSE_DESTROY',
   payload: expense,
+});
+
+export const insert = (expense) => ({
+  type: "EXPENSE_INSERT",
+  payload: expense,
 })
 
 
