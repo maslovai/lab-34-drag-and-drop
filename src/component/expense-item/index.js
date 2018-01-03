@@ -18,9 +18,9 @@ class ExpenseItem extends React.Component{
     return(
       <Droppable containerClass ='expense-item' handleDrop = {this.handleChangeCategory}>
           {this.props.expenses[this.props.categoryID].map((expense,i) => 
-          <Draggable expense={expense}>
-            <div key={expense.id}>
-              <p>{(expense.name)}</p>
+          <Draggable expense={expense} key={expense.id}>
+            <div>
+              <p>{(expense.name)}  {(expense.cost)}</p>
               <button onClick={() => this.props.expenseDelete(expense)}> x </button>
             </div>
           </Draggable>
