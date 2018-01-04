@@ -4,7 +4,7 @@
   "description": "401 Labs",
   "main": "index.js",
   "devDependencies": {
-    "enzyme": "^3.2.0",
+    "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.0",
     "jest": "^21.2.1",
     "react-test-renderer": "^16.2.0"
@@ -12,7 +12,7 @@
   "scripts": {
     "test": "jest",
     "watch": "webpack-dev-server --inline --hot",
-    "watch-work": "webpack-dev-server --inline --hot --public $C9_HOSTNAME --host $IP --port $PORT",
+    "watch-work": "webpack-dev-server --inline --hot",
     "build": "webpack"
   },
   "keywords": [],
