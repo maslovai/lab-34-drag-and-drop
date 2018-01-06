@@ -1,4 +1,4 @@
-import './expense-item.scss';
+// import './expense-item.scss';
 import React from 'react';
 import Droppable from '../droppable';
 import Draggable from '../draggable'

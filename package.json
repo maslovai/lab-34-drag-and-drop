@@ -9,8 +9,17 @@
     "jest": "^21.2.1",
     "react-test-renderer": "^16.2.0"
   },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/src/__test__/shim.js",
+      "<rootDir>/src/__test__/setup.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(scss)$": "<rootDir>/node_modules/jest-css-modules"
+    }
+  },
   "scripts": {
-    "test": "jest",
+    "test": "jest --env=jsdom --setupTestFrameworkScriptFile=raf/polyfill",
     "watch": "webpack-dev-server --inline --hot",
     "watch-work": "webpack-dev-server --inline --hot",
     "build": "webpack"

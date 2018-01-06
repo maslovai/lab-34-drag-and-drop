@@ -1,4 +1,4 @@
-import './_category-form.scss';
+// import './_category-form.scss';
 import React from 'react';
 
 let emptyState = {
@@ -12,8 +12,8 @@ class CategoryForm extends React.Component{
     this.state = this.props.category || emptyState;
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
-    this.props.onComplete({name:'Food', budget:200});
-    this.props.onComplete({name:'Fun', budget:50})
+    // this.props.onComplete({name:'Food', budget:200});
+    // this.props.onComplete({name:'Fun', budget:50})
   }
 
   handleChange(e){

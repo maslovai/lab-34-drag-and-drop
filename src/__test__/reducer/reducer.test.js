@@ -55,12 +55,6 @@ describe('Category Reducer:', () => {
 
 describe('Expense Reducer:', () => {
 
-
-    // let categoryID = payload.categoryID;
-    // let category = state[categoryID];
-    // let result = [...category, payload];
-    // return {...state, [categoryID]: result};
-
     test('Adds expense to a given category', () =>{
         let addExpense = {name:'expense1', cost:1, id:uuid(), categoryID:uuid()}
         let state = {[addExpense.categoryID]:addExpense};
